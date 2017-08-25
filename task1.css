@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+h1 {
+    line-height: 2em;
+}
+
+h2 {
+    line-height: 2em;
+    color: grey;
+}
+
+h3 {
+    line-height: 2em;
+    color: lightgrey;
+}
+
+p {
+    text-indent: 2em;
+    line-height: 1.5em;
+}
+
+/*
+导航栏
+ */
+nav {
+    background-color: rgb(64, 64, 64);
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+nav h1 {
+    font-size: 40px;
+    color: blue;
+    position: absolute;
+    top: 0;
+    left: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    right: 12px;
+}
+
+nav li {
+    display: inline;
+    font-size: 15px;
+    color: black;
+    float: left;
+    margin-right: 15px;
+}
+
+nav a {
+    color: white;
+}
+
+.spli {
+    color: grey;
+}
+
+/*
+第一篇文章
+ */
+.first {
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 24px;
+    padding: 24px;
+}
+
+.first img {
+    margin: 24px 0;
+}
+
+/*
+第二篇文章
+*/
+.second {
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 24px;
+    padding: 24px;
+}
+
+.second ul {
+    list-style-type: none;
+    margin-left: 24px;
+}
+
+.second li {
+    line-height: 1.5em;
+}
+
+.second img {
+    margin: 24px 0;
+}
+
+/*
+图片
+*/
+.third {
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 24px;
+    padding: 24px;
+}
+
+.third div {
+    border: 1px solid lightgray;
+    width: 150px;
+    height: 165px;
+    padding: 0;
+    margin: 1em;
+    margin-left: 48px;
+    text-align: center;
+}
+
+.third span {
+    line-height: 2em;
+}
+
+.third img {
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+/*
+最后一篇文章
+*/
+.forth {
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 24px;
+    padding: 24px;
+}
+
+.forth ol {
+    line-height: 1.5em;
+    margin-left: 48px;
+    margin-bottom: 24px;
+}
+
+.forth table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.forth th {
+    background-color: black;
+    color: white;
+    text-align: left;
+    padding: 0.5em;
+}
+
+.forth td {
+    border: 1px solid lightgrey;
+    padding: 0.5em;
+}
+
+.total {
+    background-color: lightgrey;
+}
+
+/*
+侧栏
+*/
+.fifth {
+    background-color: white;
+    border: 1px solid lightgrey;
+    margin: 48px 24px 24px;
+    padding: 24px;
+    line-height: 2em;
+    align-items: center;
+}
+
+.fifth h2 {
+    color: black;
+    border-left: 2px solid lightgray;
+    text-indent: 0.5em;
+    margin-bottom: 1em;
+}
+
+.fifth div {
+    width: 20%;
+    margin: 0 auto;
+    text-align: left;
+    border: none;
+}
+
+.fifth span {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.sb input {
+    font-size: 24px;
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    left: 0;
+}
+
+/*
+底栏
+*/
+.bot {
+    background-color: black;
+    text-align: center;
+}
+
+.bot p {
+    color: white;
+    height: 80px;
+    line-height: 80px;
+}
