@@ -191,16 +191,23 @@ nav a {
     margin-bottom: 1em;
 }
 
-.fifth div {
-    width: 20%;
-    margin: 0 auto;
-    text-align: left;
-    border: none;
+.fifth table {
+    margin-left: 350px;
+}
+
+.rg {
+    float: right;
+    margin-right: 1em;
 }
 
 .fifth span {
-    display: block;
-    margin-bottom: 1em;
+    color: lightgrey;
+}
+
+#pr {
+    height: 100px;
+    width: 800px;
+    font-size: 20px;
 }
 
 .sb input {
