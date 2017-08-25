@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    overflow: hidden;
+    background-color: #eee;
+    border: 1px solid #999;
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+}
+
+header {
+    background-color: white;
+    border: 1px solid #999;
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+aside {
+    background-color: white;
+    border: 1px solid #999;
+    width: 120px;
+    height: 420px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 0 140px 0 220px;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+span {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
