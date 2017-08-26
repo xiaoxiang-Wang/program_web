@@ -4,17 +4,19 @@
 有待解决。。。。。。
 */
 div {
+    overflow: hidden;
     background-color: #eee;
     border: 1px solid #999;
     position: relative;
     margin: 20px;
+    padding: 20px;
 }
 
 section {
     background-color: white;
     border: 1px solid #999;
     padding: 20px;
-    margin: 20px 160px 20px 240px;
+    margin: 0 140px 0 220px;
 }
 
 header {

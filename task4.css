@@ -1,0 +1,36 @@
+.outer {
+    overflow: hidden;
+    background-color: #ccc;
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.outer div {
+    background-color: #fc0;
+    width: 100px;
+    height: 100px;
+}
+
+.in1 {
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+.in2 {
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: -50px;
+    margin-bottom: -50px;
+}
