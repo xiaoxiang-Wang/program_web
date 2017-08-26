@@ -1,15 +1,20 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
+/*
+右侧绝对定位的子容器溢出且被裁剪
+父容器无法自适应高度即使用了overflow
+有待解决。。。。。。
+*/
 div {
-    overflow: hidden;
     background-color: #eee;
     border: 1px solid #999;
     position: relative;
-    padding: 20px;
     margin: 20px;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 20px 160px 20px 240px;
 }
 
 header {
@@ -30,13 +35,6 @@ aside {
     position: absolute;
     right: 20px;
     top: 20px;
-}
-
-section {
-    background-color: white;
-    border: 1px solid #999;
-    padding: 20px;
-    margin: 0 140px 0 220px;
 }
 
 img {

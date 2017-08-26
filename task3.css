@@ -1,8 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
+/*
+  三栏式布局中间的必须在最后布局
+*/
 div {
     overflow: hidden;
     background-color: #eee;
@@ -19,20 +17,19 @@ header {
     height: 120px;
 }
 
-section {
-    background-color: white;
-    border: 1px solid #999;
-    width: auto;
-    padding: 20px;
-    margin: 0 140px 0 220px;
-}
-
 aside {
     background-color: white;
     border: 1px solid #999;
     float: right;
     width: 120px;
     height: 420px;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #999;
+    padding: 20px;
+    margin: 0 140px 0 220px;
 }
 
 img {
