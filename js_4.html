@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task4</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        li {
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            display: inline-block;
+            padding: 5px;
+            margin: 5px;
+            cursor: pointer; /* 光标的形状 */
+        }
+    </style>
+</head>
+<body>
+<!-- button不能放在form里，否则网页会出问题 -->
+<div>
+    <input type="text" id="input" name="number"/>
+    <button id="lin">左侧入</button>
+    <button id="rin">右侧入</button>
+    <button id="lout">左侧出</button>
+    <button id="rout">右侧出</button>
+</div>
+<ul id="queue"></ul>
+
+<script type="text/javascript">
+    var btlin = document.getElementById('lin');
+    var btrin = document.getElementById('rin');
+    var btlo = document.getElementById('lout');
+    var btro = document.getElementById('rout');
+    var input = document.getElementById('input');
+    var ul = document.getElementById('queue');
+
+    function lin() {
+        if (input.value === '') {
+            alert('input please!');
+            input.focus(); // 光标定位到文本输入框
+        } else if (!isNaN(input.value)) {
+            var li = document.createElement('li');
+            li.innerHTML = input.value;
+            ul.insertBefore(li, ul.firstChild);
+        } else {
+            alert('input number please!');
+            input.focus();
+        }
+    }
+
+    function rin() {
+        if (input.value === '') {
+            alert('input please!');
+            input.focus();
+        } else if (!isNaN(input.value)) {
+            var li = document.createElement('li');
+            li.innerHTML = input.value;
+            ul.appendChild(li);
+        } else {
+            alert('input number please!');
+            input.focus();
+        }
+    }
+
+    function lout() {
+        if (ul.children.length === 0) {
+            alert('queue is empty!');
+        } else {
+            ul.firstChild.remove();
+        }
+    }
+
+    function rout() {
+        if (ul.children.length === 0) {
+            alert('queue is empty!');
+        } else {
+            ul.lastChild.remove();
+        }
+    }
+
+    function btShow() {
+        // event.target的使用
+        alert(ul.removeChild(event.target).innerHTML);
+    }
+
+    btlin.onclick = function () {
+        lin();
+    }
+    btrin.onclick = function () {
+        rin();
+    }
+    btlo.onclick = function () {
+        lout();
+    }
+    btro.onclick = function () {
+        rout();
+    }
+
+    var li = document.getElementsByTagName('li');
+    ul.addEventListener('click', btShow);
+</script>
+</body>
+</html>
